@@ -19,8 +19,10 @@ $ nmap ... nmap -sC -sV --reason -p 22,80,139,445 192.168.1.110
 
 This scan identifies the services below as potential points of entry:
 - Target 1
-  - List of
-  - Exposed Services
+  - Port 22, SSH is open
+  - port 80, HTTP is running
+  - port 111 runing rpcbind
+  - ports 139 and 445 has netbios-ssn 
 
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
