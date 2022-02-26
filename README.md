@@ -20,19 +20,17 @@ $ nmap ... nmap -sC -sV --reason -p 22,80,139,445 192.168.1.110
 This scan identifies the services below as potential points of entry:
 - Target 1
   - Port 22 SSH is open
-  - port 80 HTTP is running
+  - port 80 HTTP is running (apache 2.4.10)
   - port 111 runing rpcbind
-  - ports 139 and 445 have netbios-ssn 
-
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
+  - ports 139 and 445 have netbios-ssn/microsoft-ds 
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  - List of
-  - Critical
-  - Vulnerabilities
+  - rpcbind - CVE-2017-8779
+  - apache 2.4.10 -CVE-2017-7668, CVE-2017-3169
+  - 
 
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
+
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
