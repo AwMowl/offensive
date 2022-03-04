@@ -36,13 +36,13 @@ The following vulnerabilities were identified on each target:
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _TODO: Insert flag1{b9bbcb33e11b80be759c4e844862482d}
+  - `flag1.txt`:flag1{b9bbcb33e11b80be759c4e844862482d}
     - **Exploit Used**
       - Using inspector tool on the 192.168.1.110/service.html page. 
       -
   - `flag2.txt`: flag2{fc3fd58dcdad9ab23faca6e9a36e581c}
     - **Exploit Used**
-      - Used "Wpscan --url http://raven.local/wordpress --enumerate u" to discover usernames for the website, then guessed at the password for user michael in order to SSH into webserver. Once in, flag2 was under var/www- `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+      - Used "Wpscan --url http://raven.local/wordpress --enumerate u" to discover usernames for the website, then guessed at the password for user michael in order to SSH into webserver. Once in, flag2 was under var/www- `flag2.txt`:
     - **Exploit Used**
       - flag3{afc01ab56b50591e7dccf93122770cd2}
       - Cat out the wp-config.php file to find the mysql password: R@v3nSecurity.
@@ -55,5 +55,5 @@ steven:$P$8kJVD9jsxx/loJoqNsURgHiaB23j7W/
 
       - Check sudo privledges with sudo -l. we have ability to use python
       - Using GTFObin and other resources for privledge escalation, sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’ works for us.
-      - once operating as root, find flag3.txt
+      - once operating as root, find flag4.txt
    
